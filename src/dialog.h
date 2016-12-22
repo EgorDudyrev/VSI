@@ -18,7 +18,7 @@ public:
     ~Dialog();
 
 
-private:
+protected:
     Ui::Dialog *ui;
     Thread* thread;
     DataOut* dataOut;

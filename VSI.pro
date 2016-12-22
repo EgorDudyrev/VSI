@@ -31,7 +31,10 @@ SOURCES +=\
     src/algorithm.cpp \
     src/fpts.cpp \
     src/thread.cpp \
-    src/dataout.cpp
+    src/dataout.cpp \
+    src/maindialog.cpp \
+    src/choosesortdialog.cpp \
+    src/sortingdialog.cpp
 
 HEADERS  += \
     src/dialog.h \
@@ -40,7 +43,12 @@ HEADERS  += \
     src/algorithm.h \
     src/fpts.h \
     src/thread.h \
-    src/dataout.h
+    src/dataout.h \
+    src/maindialog.h \
+    src/choosesortdialog.h \
+    src/sortingdialog.h
 
 FORMS    += \
-    ui/dialog.ui
+    ui/choosesortdialog.ui \
+    ui/maindialog.ui \
+    ui/sortingdialog.ui

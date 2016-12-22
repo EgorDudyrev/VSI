@@ -11,7 +11,7 @@ class DataReader
 public:
     DataReader(){}
     DataReader(const DataReader& dataR){}
-    ~DataReader(){}
+    virtual ~DataReader(){}
 
     virtual QVector<readVectEl> read()=0;
 protected:
@@ -22,7 +22,7 @@ class JSONReader: public DataReader
 public:
     JSONReader():DataReader(){}
     JSONReader(const JSONReader& jsonR):DataReader(jsonR){}
-    ~JSONReader(){}
+    virtual ~JSONReader(){}
 
     virtual QVector<readVectEl> read();
 protected:
@@ -33,7 +33,7 @@ class XMLReader: public DataReader
 public:
     XMLReader():DataReader(){}
     XMLReader(const XMLReader& xmlR):DataReader(xmlR){}
-    ~XMLReader(){}
+    virtual ~XMLReader(){}
 
     virtual QVector<readVectEl> read();
 protected:
